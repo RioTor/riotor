@@ -1,8 +1,9 @@
 
 Events = new Mongo.Collection('events');
 
-EventUpdates = new Mongo.Collection('event_updates');
+EventUpdates = new Mongo.Collection('eventupdates');
 
+/*
 EventUpdateSchema = new SimpleSchema({
 
 is_private: {
@@ -29,3 +30,15 @@ lon : {
 });
 
 EventUpdates.attachSchema( EventUpdateSchema );
+*/
+
+Meteor.startup( function () {
+
+  if(EventUpdates.find({}).count() === 0){
+
+    EventUpdates.insert({is_private: false, description: "That place",lat: 36.97,lon:-122.0158});
+    EventUpdates.insert({is_private: false, description: "The place",lat: 36.971,lon:-122.018});
+    EventUpdates.insert({is_private: false, description: "No cops here (we think)",lat: 36.969,lon:-122.0245});
+  }
+
+});
