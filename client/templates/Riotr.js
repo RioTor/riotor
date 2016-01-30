@@ -76,7 +76,7 @@ Template.Riotr.rendered = function() {
     $('#new_update_dialog').on('hidden.bs.modal', function () {
         // create point centered on map
         var divIcon = L.divIcon({className: 'div-icon'});
-        var marker = L.marker([0,0], {icon: divIcon}).addTo(map);
+        var marker = L.marker(map.getCenter(), {icon: divIcon}).addTo(map);
 
         map.on('move', function () {
             marker.setLatLng(map.getCenter());
@@ -90,8 +90,9 @@ Template.Riotr.rendered = function() {
             lat = Number(position['lat']);
             lng = Number(position['lng']);
 
-            console.log(position);
-            //setLeafLatLong(lat, lng);
+            EventUpdates.update(Session.get("newestUpdateID"), {
+                $set: {lat: lat, lng: lng, created_on: new Date()}
+            });
 
         });
     });
