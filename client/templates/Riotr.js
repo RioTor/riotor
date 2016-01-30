@@ -1,5 +1,6 @@
 Session.setDefault('counter', 0);
-
+var map;
+var markers = new Array();
 Template.hello.helpers({
     counter: function() {
         return Session.get('counter');
@@ -28,14 +29,28 @@ Meteor.startup(function() {
 
     //$(window).resize();
 });
-
+Template.update_item.events({
+   'click .list-group-item': function(){
+      console.log(this);
+  // leafletData.getMap('map').setView([this.lat,this.lng], 13);
+      map.setView([this.lat,this.lng], 13);
+      for (marker in markers){
+         var lat = markers[marker].lat;
+         var lng = markers[marker].lng;
+         if (lat == this.lat && lng == this.lng){
+            markers[marker].openPopup();
+         }
+      }
+      //EventUpdates.find(this.uid).openPopup();
+   }
+});
 //temporary test markers
 //var Markers = new Mongo.Collection('markers');
 //Meteor.subscribe('markers');
 Template.Riotr.rendered = function() {
     $('#map').css('height', window.innerHeight);
 
-    var map = L.map('map', {
+    map = L.map('map', {
         doubleClickZoom: false
     }).setView([36.9719, -122.0264], 13);
 
@@ -61,12 +76,15 @@ Template.Riotr.rendered = function() {
                 var marker = L.marker([document.lat, document.lng]);
                 //L.marker([36.9719, -122.0264]).addTo(map);
                 marker.addTo(map);
-                marker.on('click', function(event) {
-                    map.removeLayer(marker);
-                    EventUpdates.remove({
-                        _id: document._id
-                    });
-                });
+                var popupData =  $("#"+document._id).html();
+                marker.bindPopup(popupData);
+                markers.push(marker);
+                //marker.on('click', function(event) {
+                 //   map.removeLayer(marker);
+                 //   EventUpdates.remove({
+                 //       _id: document._id
+                 //   });
+                //});
             }
             
         }
