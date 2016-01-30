@@ -1,0 +1,35 @@
+<template name="home">
+  <nav class="navbar navbar-inverse">
+    <center><h4>RioTor</h4></center>
+  </nav>
+  <row>
+  {{> home_buttons}}
+  </row>
+</template>
+
+
+<template name="home_buttons">
+  <div class="thumbnail" id="home_buttons">
+
+      <div class="input-group">
+        <input type="text" class="form-control search_bar" placeholder="Search for...">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+        </span>
+      </div>
+    <div class="caption">
+
+      <center>
+      <button type="button" class="btn btn-primary main_button"
+                      data-dismiss="modal">
+                          SignUp
+      </button>
+      <button type="button" class="btn btn-primary main_button">
+                  SignIn
+      </button>
+    </center>
+    </div>
+
+  </div>
+
+</template>

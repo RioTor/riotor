@@ -68,7 +68,7 @@ Template.Riotr.rendered = function() {
                     });
                 });
             }
-            
+
         }
     });
 
