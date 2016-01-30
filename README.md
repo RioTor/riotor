@@ -1,2 +1,4 @@
 # riotor
-social activist application
+A social activist application created for the 2016 Santa Cruz Hackathon!
+
+ 
