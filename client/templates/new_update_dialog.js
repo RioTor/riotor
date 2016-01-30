@@ -19,7 +19,6 @@ Template.new_update_dialog.events({
             tag: tag,
             text: text,
             isPrivate: isPrivate,
-            created_on: new Date(),
             name: userName,
             uid: uid
         }, function(error, result){

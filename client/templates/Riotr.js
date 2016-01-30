@@ -90,7 +90,6 @@ Template.Riotr.rendered = function() {
             lat = Number(position['lat']);
             lng = Number(position['lng']);
 
-            console.log(position);
             EventUpdates.update(Session.get("newestUpdateID"), {
                 $set: {lat: lat, lng: lng, created_on: new Date()}
             });
