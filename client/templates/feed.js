@@ -31,7 +31,7 @@
 
 Template.feed.helpers({
     updates: function() {
-        return EventUpdates.find({}, {sort: {created_on: -1}});
+        return EventUpdates.find({lng: { $exists: true }, lat: { $exists: true }}, {sort: {created_on: -1}});
     }
 });
 
