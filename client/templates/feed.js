@@ -31,7 +31,7 @@
 
 Template.feed.helpers({
     updates: function() {
-        return EventUpdates.find();
+        return EventUpdates.find({}, {sort: {created_on: -1}});
     }
 });
 
