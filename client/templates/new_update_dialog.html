@@ -12,17 +12,18 @@
                 <!-- Modal Body -->
                 <div class="modal-body">
                     <h4>Alert Type:</h4>
-                    <ul class="pagination">
-                        <li><a href="#"><i class="glyphicon glyphicon-music"></i></a></li>
-                        <li><a href="#">..</a></li>
-                        <li><a href="#">..</a></li>
-                        <li><a href="#">..</a></li>
-                        <li><a href="#">..</a></li>
-                        <li><a href="#">..</a></li>
-                        <li><a href="#">..</a></li>
-                        <li><a href="#">..</a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-bullhorn"></i></a></li>
-                    </ul>
+                    <select id="selectTag">
+                      <option value="other">other</option>
+                      <option value="speaker">speaker <i class="glyphicon glyphicon-bullhorn"></i></option>
+                      <option value="police">police</option>
+                      <option value="food">food</option>
+                      <option value="supplies">supplies</option>
+                      <option value="medic">medic</option>
+                      <option value="shelter">shelter</option>
+                      <option value="water">water</option>
+                      <option value="press">press</option>
+                      <option value="assembly">assembly</option>
+                    </select>
                     <form role="form">
                         <div class="form-group">
                             <label for="inputMessage">Message</label>
@@ -30,7 +31,7 @@
                         </div>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" /> Private
+                                <input id="private" type="checkbox" /> Private
                             </label>
                         </div>
                     </form>
@@ -48,18 +49,3 @@
         </div>
     </div>
 </template>
-<!--template name="confirm_update_dialog">
-    <div class="thumbnail" id="confirm_update_dialog">
-        <div class="caption">
-            <h3>Thumbnail label</h3>
-            <center>
-                <button type="button" class="btn btn-default" data-dismiss="modal">
-                    Cancel
-                </button>
-                <button id="confirm" type="button" class="btn btn-primary">
-                    Confirm
-                </button>
-            </center>
-        </div>
-    </div>
-</template-->

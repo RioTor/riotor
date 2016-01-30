@@ -72,4 +72,28 @@ Template.Riotr.rendered = function() {
         }
     });
 
+    // on modal hide create new point to set latlng from
+    $('#new_update_dialog').on('hidden.bs.modal', function () {
+        // create point centered on map
+        var divIcon = L.divIcon({className: 'div-icon'});
+        var marker = L.marker([0,0], {icon: divIcon}).addTo(map);
+
+        map.on('move', function () {
+            marker.setLatLng(map.getCenter());
+            //console.log(map.getCenter());
+        });
+        //Dragend event of map for update marker position
+        map.on('dragend', function(e) {
+            var cnt = map.getCenter();
+            var position = marker.getLatLng();
+
+            lat = Number(position['lat']);
+            lng = Number(position['lng']);
+
+            console.log(position);
+            //setLeafLatLong(lat, lng);
+
+        });
+    });
+
 }

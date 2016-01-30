@@ -1,14 +1,13 @@
 Template.new_update_dialog.events({
   'click #confirmText': function(){
 
-    var tag = "Police";
-    var text = "The police are coming";
-    var isPrivate = true;
+    var tag = $("#selectTag").val();;
+    var text = $("#inputMessage").val();
+    var isPrivate = $("#private").attr('checked');
     var userName = "";
     var uid = "";
 
     console.log(Meteor.user());
-
     if(Meteor.userId()){
       userName = Meteor.user().username;
       uid = Meteor.userId();
