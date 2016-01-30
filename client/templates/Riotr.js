@@ -12,3 +12,9 @@ Template.hello.events({
     Session.set('counter', Session.get('counter') + 1);
   }
 });
+
+Template.update_list.helpers({
+  get_updates: function () {
+  return event_updates.find();
+}
+});

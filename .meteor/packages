@@ -21,8 +21,8 @@ insecure                # Allow all DB writes from clients (for prototyping)
 iron:router
 accounts-password
 accounts-ui
-aldeed:simple-schema
 bootstrap
 useraccounts:bootstrap
 bevanhunt:leaflet
 meteortoys:allthings
+aldeed:collection2
