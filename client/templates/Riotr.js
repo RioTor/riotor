@@ -24,6 +24,7 @@ Meteor.startup(function() {
    $(window).resize(function(){
       $('#map').css('height', window.innerHeight);
    });
+
    //$(window).resize();
 });
 
