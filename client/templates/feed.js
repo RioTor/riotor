@@ -28,3 +28,14 @@
       }
     $(document).ready(function() {initMenu();});
     */
+    Template.feed.helpers({
+      updates: function () {
+        return EventUpdates.find();
+      }
+      });
+
+
+
+      Template.registerHelper("formatDate", function(timestamp) {
+      return new Date(timestamp).toString('yyyy-MM-dd')
+      });

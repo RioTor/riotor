@@ -24,14 +24,14 @@ Meteor.startup(function() {
    $(window).resize(function(){
       $('#map').css('height', window.innerHeight);
    });
-   $(window).resize();
+   //$(window).resize();
 });
 
 //temporary test markers
 //var Markers = new Mongo.Collection('markers');
 //Meteor.subscribe('markers');
 Template.Riotr.rendered = function() {
-
+$('#map').css('height', window.innerHeight);
 
    var map = L.map('map', {
       doubleClickZoom: false
@@ -42,7 +42,7 @@ Template.Riotr.rendered = function() {
    //Markers.insert({lat: 5, lng: 5});
 
    map.on('dblclick', function(event) {
-      EventUpdates.insert({lat: event.latlng.lat, lng: event.latlng.lng});
+      EventUpdates.insert({lat: event.latlng.lat, lng: event.latlng.lng, created_on: new Date()});
       console.log (event.latlng.lat, event.latlng.lng);
    });
 
