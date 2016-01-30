@@ -15,6 +15,14 @@ Template.new_update_dialog.events({
       userName = "anon";
       uid = null;
     }
+    Session.set('latest_update',{
+    tag: tag,
+    text: text,
+    isPrivate: isPrivate,
+    created_on: new Date(),
+    name: userName,
+    uid: uid
+    });
     EventUpdates.insert({
             tag: tag,
             text: text,
