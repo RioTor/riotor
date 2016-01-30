@@ -27,15 +27,16 @@
         );
       }
     $(document).ready(function() {initMenu();});
-    */
-    Template.feed.helpers({
-      updates: function () {
-        return EventUpdates.find();
-      }
-      });
+*/
+
+Template.feed.helpers({
+    updates: function() {
+        return EventUpdates.find({}, {sort: {created_on: -1}});
+    }
+});
 
 
 
-      Template.registerHelper("formatDate", function(timestamp) {
-      return new Date(timestamp).toString('yyyy-MM-dd')
-      });
+Template.registerHelper("formatDate", function(timestamp) {
+    return new Date(timestamp).toString('yyyy-MM-dd')
+});

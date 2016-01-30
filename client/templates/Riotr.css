@@ -18,6 +18,12 @@ h1 {
 	font-size: 30px;
 }
 
+.div-icon{
+  border-radius: 50%;
+  background-color: red;
+  height: 10px;
+  width: 10px;
+}
 
 .map {
 	background-color: #9e311c;

@@ -1,8 +1,5 @@
-
 <template name="feed">
-
-      <div id="wrapper">
-
+    <div id="wrapper">
         <div id="page-content-wrapper">
             <div class="container-fluid xyz">
                 <div class="row">
@@ -11,23 +8,19 @@
                     </div>
                 </div>
             </div>
-        <button id="add_button" data-toggle="modal" data-target="#new_update_dialog"></button>
+            <button id="add_button" data-toggle="modal" data-target="#new_update_dialog"></button>
         </div>
         <button id="panel_button" data-toggle="collapse"></button>
-          <!-- Sidebar -->
-          <div id="sidebar-wrapper">
-
-              <ul class="sidebar-nav list-group" id="menu">
-
-                {{#each updates}}
-                  {{> update_item}}
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav list-group" id="menu">
+                {{#each updates}} 
+                  {{> update_item}} 
                 {{/each}}
-
-              </ul>
-          </div><!-- /#sidebar-wrapper -->
-          <!-- Page Content -->
-
-
-          <!-- /#page-content-wrapper -->
-      </div>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <!-- /#page-content-wrapper -->
+    </div>
 </template>
