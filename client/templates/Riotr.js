@@ -23,6 +23,7 @@ Template.update_list.helpers({
 Meteor.startup(function() {
    $(window).resize(function(){
       $('#map').css('height', window.innerHeight);
+      //$('#confirm_update_dialog').css('margin-left',window.innerWidth / 2 - 200);
    });
 
    //$(window).resize();

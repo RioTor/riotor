@@ -1,0 +1,15 @@
+#new_update_dialog{
+
+
+}
+
+#confirm_update_dialog{
+  position: absolute;
+  bottom: 0px;
+  width:200px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+
+}
