@@ -36,7 +36,8 @@ Template.Riotr.rendered = function() {
    var map = L.map('map', {
       doubleClickZoom: false
    }).setView([36.9719, -122.0264], 13);
-
+  // L.marker([36.9719, -122.0264]).addTo(map);
+   L.Icon.Default.imagePath = 'packages/bevanhunt_leaflet/images';
    L.tileLayer.provider('Thunderforest.Outdoors').addTo(map);
    //Markers.insert({lat: 5, lng: 5});
 
@@ -45,14 +46,18 @@ Template.Riotr.rendered = function() {
       console.log (event.latlng.lat, event.latlng.lng);
    });
 
-   var query = EventUpdates.find();
-   query.observe({
+   //var query = EventUpdates.find();
+   EventUpdates.find().observe({
       added: function (document) {
-         var marker = L.marker(document.latlng).addTo(map)
-         .on('click', function(event) {
+
+         var marker = L.marker([document.lat,document.lng]);
+         //L.marker([36.9719, -122.0264]).addTo(map);
+         marker.addTo(map);
+         marker.on('click', function(event) {
             map.removeLayer(marker);
             EventUpdates.remove({_id: document._id});
          });
+         console.log(marker);
       }
    });
 

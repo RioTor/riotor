@@ -33,9 +33,9 @@ EventUpdates.attachSchema( EventUpdateSchema );
 */
 
 Meteor.startup( function () {
-
-  if(EventUpdates.find({}).count() === 0){
-
+    console.log(EventUpdates.find({}).count());
+  if(EventUpdates.find({}).count() < 1){
+    console.log("ADDING UPDATES");
     EventUpdates.insert({is_private: false, description: "That place",lat: 36.97,lon:-122.0158});
     EventUpdates.insert({is_private: false, description: "The place",lat: 36.971,lon:-122.018});
     EventUpdates.insert({is_private: false, description: "No cops here (we think)",lat: 36.969,lon:-122.0245});
