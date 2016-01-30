@@ -1,1 +1,6 @@
 /* CSS declarations go here */
+
+  #map {
+    min-height: 350px;
+    min-width: 100vh;
+  }
