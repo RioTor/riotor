@@ -32,6 +32,10 @@
 Template.feed.helpers({
     updates: function() {
         return EventUpdates.find({lng: { $exists: true }, lat: { $exists: true }, "eventID": {$in: [Session.get("currentEventID")] }}, {sort: {created_on: -1}});
+    },
+    eventName: function(){
+      console.log(Events.findOne({_id: Session.get('currentEventID')}).eventName);
+        return Events.findOne({_id: Session.get('currentEventID')}).eventName;
     }
 });
 
