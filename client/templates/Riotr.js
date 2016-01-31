@@ -25,6 +25,7 @@ Meteor.startup(function() {
         $('#map').css('height', window.innerHeight);
         //$('#confirm_update_dialog').css('margin-left',window.innerWidth / 2 - 200);
     });
+    $('#map').css('height', window.innerHeight);
 
     //$(window).resize();
 });
@@ -73,8 +74,9 @@ Template.Riotr.rendered = function() {
     });
 
     // on modal hide create new point to set latlng from
-    $('#new_update_dialog').on('hidden.bs.modal', function () {
+    $('#confirmText').on('click', function () {
         // create point centered on map
+
         var divIcon = L.divIcon({className: 'div-icon'});
         var marker = L.marker(map.getCenter(), {icon: divIcon}).addTo(map);
 
@@ -89,12 +91,17 @@ Template.Riotr.rendered = function() {
 
             lat = Number(position['lat']);
             lng = Number(position['lng']);
+            Session.set('latest_position',position);
 
             EventUpdates.update(Session.get("newestUpdateID"), {
                 $set: {lat: lat, lng: lng, created_on: new Date()}
             });
 
         });
+        $('#confirm_submit').on('click', function(){
+          map.removeLayer(marker);
+        });
+
     });
 
 }
