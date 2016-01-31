@@ -1,10 +1,28 @@
 <template name="home">
-    {{> nav}}
+    {{> nav_landing}}
     <row>
-        {{> home_buttons}}
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            <div class="landing-container">
+                <img class="img-responsive" src="/images/riotor-main.png">
+                <div class="rioting-text">
+                    <button type="button" class="rioting-button" data-toggle="collapse" data-target="#rioting">What is Rioting?</button>
+                    <div id="rioting" class="collapse">To not conform.
+                        <br>To not look down,
+                        <br>or away.
+                        <br>To go out.
+                        <br>To stand up
+                        <br>
+                    </div>
+                    <!--{{> home_buttons}}-->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+        </div>
     </row>
 </template>
-
 <template name="home_buttons">
     <div class="thumbnail" id="home_buttons">
         <div class="input-group">

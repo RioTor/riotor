@@ -1,5 +1,6 @@
 body{
   background: #f8f3e1;
+  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
 
 }
 
@@ -24,6 +25,34 @@ body{
 
 .main_button:hover{
   background-color: orange;
+}
 
+.landing-container{
+  
 
 }
+
+.rioting-text {
+  margin-top: -50px;
+  text-align: center;
+}
+
+.rioting-button {
+
+ color: #3a0c26;
+ background: #f8f3e1;
+ border: 1px solid #3a0c26;
+ font-size: 17px;
+ padding: 7px 12px;
+ font-weight: normal;
+ margin-right: 12px;
+ display: inline-block;
+ text-decoration: none;
+  min-width: 120px;
+}
+
+.rioting-button:hover, .rioting-button:active {
+  color:#fff;
+  background:#f8f3e1;
+}
+
