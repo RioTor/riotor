@@ -60,7 +60,8 @@ Template.Riotr.rendered = function() {
         added: function(document) {
             // if the doc has lat lngs then add to map
             if(document.lat && document.lng){
-                var marker = L.marker([document.lat, document.lng]);
+                var divIcon = L.divIcon({clasName: document.tag});
+                var marker = L.marker([document.lat, document.lng], {icon: divIcon});
                 //L.marker([36.9719, -122.0264]).addTo(map);
                 marker.addTo(map);
                 var popupData =  $("#"+document._id).html();
