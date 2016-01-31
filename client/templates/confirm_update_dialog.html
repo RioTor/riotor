@@ -2,21 +2,16 @@
 <template name="confirm_update_dialog">
   <div class="thumbnail" id="confirm_update_dialog">
 
-      <div class="input-group">
-        <input type="text" class="form-control search_bar" placeholder="Search for...">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
-        </span>
-      </div>
+
     <div class="caption">
 
       <center>
-      <button type="button" class="btn btn-primary main_button"
+      <button type="button" class="btn btn-secondary" id="cancel_submit"
                       data-dismiss="modal">
-                          SignUp
+                          <i class="glyphicon glyphicon-remove"></i>
       </button>
-      <button type="button" class="btn btn-primary main_button">
-                  SignIn
+      <button type="button" class="btn btn-secondary" id="confirm_submit">
+                          <i class="glyphicon glyphicon-ok"></i>
       </button>
     </center>
     </div>
