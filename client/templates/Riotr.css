@@ -1,89 +1,99 @@
 /* CSS declarations go here */
 
-  #map {
+#map {
     min-height: 350px;
-    min-width: 100vh;
-  }
-
-  body {
-	color: #ffff;
+    min-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+body {
+    color: #ffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     color: #fffff;
 }
 
 h1 {
-	font-size: 30px;
+    font-size: 30px;
 }
 
-.div-icon{
-  border-radius: 50%;
-  background-color: red;
-  height: 10px;
-  width: 10px;
+.div-icon {
+    border-radius: 50%;
+    background-color: red;
+    height: 10px;
+    width: 10px;
 }
 
 .map {
-	background-color: #9e311c;
-	border: 1px solid #ddd;
-	margin-bottom: 20px;
-	color:inherit;
+    background-color: #9e311c;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    color: inherit;
 }
 
 .feed {
-	background: white;
-	border: 1px solid #ddd;
-	margin-bottom: 20px;
-	color:#fff;
+    background: white;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    color: #fff;
 }
 
 .feed-title {
-	background: #9e311c;
-	margin-left: -15px;
-	margin-right: -15px;
-	padding: 20px;
+    background: #9e311c;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 20px;
 }
 
 .post {
-	display: block;
-	padding-top:15px;
-	padding-bottom: 15px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	border-bottom: 1px solid #ddd;
-	color:#000;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    color: #000;
 }
 
 .collapse {
-  display: none;
-  visibility: hidden;
+    display: none;
+    visibility: hidden;
 }
+
 .collapse.in {
-  display: block;
-  visibility: visible;
+    display: block;
+    visibility: visible;
 }
+
 tr.collapse.in {
-  display: table-row;
+    display: table-row;
 }
+
 tbody.collapse.in {
-  display: table-row-group;
+    display: table-row-group;
 }
+
 .collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition-property: height, visibility;
-  transition-property: height, visibility;
-  -webkit-transition-duration: 0.35s;
-  transition-duration: 0.35s;
-  -webkit-transition-timing-function: ease;
-  transition-timing-function: ease;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-property: height, visibility;
+    transition-property: height, visibility;
+    -webkit-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
 }
+
 .collapsing.width {
-  -webkit-transition-property: width, visibility;
-  transition-property: width, visibility;
-  width: 0;
-  height: auto;
+    -webkit-transition-property: width, visibility;
+    transition-property: width, visibility;
+    width: 0;
+    height: auto;
 }

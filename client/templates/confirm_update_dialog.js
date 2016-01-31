@@ -21,6 +21,7 @@ Template.confirm_update_dialog.events({
             isPrivate: isPrivate,
             name: userName,
             uid: uid,
+            created_on: new Date(),
             eventID: Session.get("currentEventID")
         }, function(error, result) {
             Session.set("newestUpdateID", result);
