@@ -3,19 +3,21 @@
         <div id="page-content-wrapper">
             <div class="container-fluid xyz">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 map_view_container">
                         {{>mainmap}}
                     </div>
                 </div>
             </div>
-            <button id="add_button" data-toggle="modal" data-target="#new_update_dialog"></button>
+            <button id="add_button" data-toggle="modal" data-target="#new_update_dialog">
+            <i class="glyphicon glyphicon-map-marker"></i>
+            </button>
         </div>
-        <button id="panel_button" data-toggle="collapse"></button>
+        <button id="panelbutton" ><i class="glyphicon glyphicon-list"></i></button>
         <!-- Sidebar -->
-        <div id="sidebar-wrapper">
+        <div id="sidebar-wrapper" >
             <ul class="sidebar-nav list-group" id="menu">
-                {{#each updates}} 
-                  {{> update_item}} 
+                {{#each updates}}
+                  {{> update_item}}
                 {{/each}}
             </ul>
         </div>

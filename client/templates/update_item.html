@@ -2,10 +2,14 @@
 
   <a href="#" class="list-group-item ">
     <!--<h4 class="list-group-item-heading">{{lat}},{{lon}} </h4> -->
-    <p class ="list-group-item-text">{{name}}</p>
-    <span class="label label-default"><i class={{tag}}></i></span>
+    <i class={{tag}} id="update_icon"></i>
     <p class ="list-group-item-text">{{text}}</p>
-    <p class="list-group-item-text">{{created_on}}</p>
+    <center>
+      <p class="list-group-item-text time_stamp">
+        <strong><small>{{get_date created_on}} {{get_time created_on}}</small></strong>
+      </p>
+
+    </center>
 
   </a>
 

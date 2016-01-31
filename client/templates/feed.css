@@ -1,3 +1,8 @@
+.map_view_container{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 
 #wrapper {
     padding-right: 0;
@@ -18,7 +23,7 @@
     position: absolute;
     top:0px;
     right: 0px;
-    width: 0;
+    width: 0px;
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
@@ -28,6 +33,8 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
+
 
 #wrapper.toggled #sidebar-wrapper {
     width: 250px;
@@ -55,7 +62,7 @@ li.update_list_item {
 
 }
 
-#panel_button {
+#panelbutton {
   position: absolute;
   top: 5px;
   right: 5px;
@@ -94,11 +101,15 @@ li.update_list_item {
     position: absolute;
     top: 0;
     right: 0;
-    width: 250px;
+    /*width: 250px;*/
     margin: 0;
     padding: 0;
     list-style: none;
-    margin-top: 2px;
+  margin-top: 0px;
+}
+
+.come-and-go{
+  width:250px;
 }
 
 .sidebar-nav li {
@@ -145,10 +156,9 @@ li.update_list_item {
 @media(min-width:750px) {
     #wrapper {
         padding-right: 0px;
+        overflow: scroll;
     }
-    .fixed-brand{
-        /*width: 250px;*/
-    }
+
     #wrapper.toggled {
         padding-right: 0;
     }
@@ -167,7 +177,7 @@ li.update_list_item {
         width: 0px;
     }
 
-    #panel_button {
+    #panelbutton {
 
       display: none;
 

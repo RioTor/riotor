@@ -60,7 +60,7 @@ Template.Riotr.rendered = function() {
         added: function(document) {
             // if the doc has lat lngs then add to map
             if(document.lat && document.lng){
-                var divIcon = L.divIcon({className: document.tag, iconSize: [200, 200], color: '#ff0000'});
+                var divIcon = L.divIcon({className: document.tag});
                 var marker = L.marker([document.lat, document.lng], {icon: divIcon});
                 //L.marker([36.9719, -122.0264]).addTo(map);
                 marker.addTo(map);
@@ -101,6 +101,9 @@ Template.Riotr.rendered = function() {
 
         });
         $('#confirm_submit').on('click', function(){
+          map.removeLayer(marker);
+        });
+        $('#cancel_submit').on('click', function(){
           map.removeLayer(marker);
         });
 

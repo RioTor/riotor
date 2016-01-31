@@ -28,5 +28,10 @@
              });
         $('#confirm_update_dialog').css('display', 'none');
 
+      }, 'click #cancel_submit': function(){
+        $('#confirm_update_dialog').css('display', 'none');
+        
       }
+
+
     });

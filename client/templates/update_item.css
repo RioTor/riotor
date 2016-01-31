@@ -1,0 +1,30 @@
+/*.icon_style{
+  color: #fff;
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 1.5em;
+
+}*/
+
+
+list-group-item-text.{
+  /*display: inline;*/
+  float:right;
+
+}
+
+#update_icon{
+  float: left;
+
+}
+
+.list-group-item {
+  width: 250px;
+  min-height: 70px;
+}
+
+.time_stamp{
+  position: absolute;
+  right: 5px;
+  bottom:0px;
+  margin: auto;
+}
