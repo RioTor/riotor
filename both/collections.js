@@ -3,6 +3,30 @@ Events = new Mongo.Collection('events');
 
 EventUpdates = new Mongo.Collection('eventupdates');
 
+Events.attachSchema(new SimpleSchema({
+  eventName: {
+    type: String,
+    label: "Event Name",
+    max: 200,
+    optional: false
+  },
+  zip: {
+    type: Number,
+    label: "Zip Code"
+  },
+  dateCreated: {
+    type: Date,
+    label: "date this event was created",
+    optional: true
+  },
+  desc: {
+    type: String,
+    label: "Brief summary of event",
+    optional: true,
+    max: 1000
+  }
+}));
+
 /*
 EventUpdateSchema = new SimpleSchema({
 
