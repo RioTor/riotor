@@ -103,7 +103,7 @@ Template.Riotr.rendered = function() {
             });
 
         });
-        $('#confirm_submit').on('click', function(){
+        $('#confirm_submit, #cancel_submit').on('click', function(){
           map.removeLayer(marker);
           map.removeEventListener('dragend')
         });
