@@ -37,14 +37,14 @@ Template.Riotr.rendered = function() {
     $('#map').css('height', window.innerHeight);
 
     var map = L.map('map', {
-        doubleClickZoom: false
-    }).setView([36.9719, -122.0264], 13);
+        doubleClickZoom: true
+    }).setView([36.9719, -122.0264], 17);
 
     // L.marker([36.9719, -122.0264]).addTo(map);
     L.Icon.Default.imagePath = 'packages/bevanhunt_leaflet/images';
     L.tileLayer.provider('Thunderforest.Outdoors').addTo(map);
     //Markers.insert({lat: 5, lng: 5});
-
+   /*
     map.on('dblclick', function(event) {
         EventUpdates.insert({
             lat: event.latlng.lat,
@@ -53,21 +53,23 @@ Template.Riotr.rendered = function() {
         });
         console.log(event.latlng.lat, event.latlng.lng);
     });
+    */
 
     //var query = EventUpdates.find();
     EventUpdates.find().observe({
         added: function(document) {
             // if the doc has lat lngs then add to map
             if(document.lat && document.lng){
-                var marker = L.marker([document.lat, document.lng]);
+                var divIcon = L.divIcon({className: document.tag, iconSize: [200, 200], color: '#ff0000'});
+                var marker = L.marker([document.lat, document.lng], {icon: divIcon});
                 //L.marker([36.9719, -122.0264]).addTo(map);
                 marker.addTo(map);
-                marker.on('click', function(event) {
+              /*  marker.on('click', function(event) {
                     map.removeLayer(marker);
                     EventUpdates.remove({
                         _id: document._id
                     });
-                });
+                });*/
             }
 
         }
@@ -78,7 +80,7 @@ Template.Riotr.rendered = function() {
         // create point centered on map
 
         var divIcon = L.divIcon({className: 'div-icon'});
-        var marker = L.marker(map.getCenter(), {icon: divIcon}).addTo(map);
+        var marker = L.marker(map.getCenter()).addTo(map);
 
         map.on('move', function () {
             marker.setLatLng(map.getCenter());

@@ -5,11 +5,29 @@ Meteor.startup(function() {
     //$(window).resize();
 });
 
+Meteor.startup(function() {
+    Session.set('selected_tag','ion-ios-location');
+});
 
 Template.new_update_dialog.events({
+
+'click .update_type_button': function(event){
+  //console.log($(event.target).attr("value"));
+  //var in_target = $(event.target).attr("value");
+  //console.log(this)
+  //Session.set('selected_tag',in_target);
+
+
+}
+
+
+,
+
+
   'click #confirmText': function(){
 
-    var tag = $("#selectTag").val();;
+    //var tag = $("#selectTag").val();;
+    var tag = $("#selectTag").val();
     var text = $("#inputMessage").val();
     var isPrivate = $("#private").attr('checked');
     var userName = "";
