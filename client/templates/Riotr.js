@@ -1,4 +1,5 @@
 var map;
+var markers =[];
 Meteor.startup(function() {
     $(window).resize(function() {
         $('#map').css('height', window.innerHeight);
@@ -8,11 +9,12 @@ Meteor.startup(function() {
 
     //$(window).resize();
 });
+
 Template.update_item.events({
    'click .list-group-item': function(){
       console.log(this);
   // leafletData.getMap('map').setView([this.lat,this.lng], 13);
-      map.setView([this.lat,this.lng], 13);
+      map.setView([this.lat,this.lng], 16);
       var marker;
       for (marker in markers){
          var lat = markers[marker].lat;
@@ -24,6 +26,7 @@ Template.update_item.events({
       //EventUpdates.find(this.uid).openPopup();
    }
 });
+
 //temporary test markers
 //var Markers = new Mongo.Collection('markers');
 //Meteor.subscribe('markers');
@@ -31,8 +34,8 @@ Template.Riotr.rendered = function() {
     $('#map').css('height', window.innerHeight);
 
     map = L.map('map', {
-        doubleClickZoom: false
-    }).setView([36.9719, -122.0264], 13);
+        doubleClickZoom: true
+    }).setView([36.9719, -122.0264], 16);
 
     // L.marker([36.9719, -122.0264]).addTo(map);
     L.Icon.Default.imagePath = 'packages/bevanhunt_leaflet/images';
