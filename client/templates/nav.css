@@ -1,9 +1,11 @@
 nav {
   color: white;
   background-color: #3a0c26;
+  height:50px;
 }
 
 .navbar {
-  color: black;
+  color: white;
   background-color: #3a0c26;
+  height:50px;
 }
