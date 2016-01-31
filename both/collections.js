@@ -1,6 +1,5 @@
 
 Events = new Mongo.Collection('events');
-
 EventUpdates = new Mongo.Collection('eventupdates');
 
 Events.attachSchema(new SimpleSchema({

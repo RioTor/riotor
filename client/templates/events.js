@@ -3,16 +3,14 @@ Template.events.helpers({
     return Events.find({}).fetch();
   },
   'eventUpdateCount': function(){
-    var count = 0;
-    //EventUpdates.find({ "eventID": { $in: [ false ] }).fetch();
-
+    var count = EventUpdates.find({ "eventID": { $in: [ this._id ] }}).count();
+    console.log(count);
     return count;
   }
 });
 
 Template.events.events({
   'click .list-group-item': function(){
-    console.log(this._id);
     Session.set('currentEventID', this._id);
   }
 });
