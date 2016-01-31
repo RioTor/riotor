@@ -4,7 +4,6 @@ Template.events.helpers({
   },
   'eventUpdateCount': function(){
     var count = EventUpdates.find({ "eventID": { $in: [ this._id ] }}).count();
-    console.log(count);
     return count;
   }
 });

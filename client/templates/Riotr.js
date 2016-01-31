@@ -1,25 +1,3 @@
-Session.setDefault('counter', 0);
-
-Template.hello.helpers({
-    counter: function() {
-        return Session.get('counter');
-    }
-});
-
-Template.hello.events({
-    'click button': function() {
-        // increment the counter when button is clicked
-        Session.set('counter', Session.get('counter') + 1);
-    }
-});
-/*
-Template.update_list.helpers({
-  get_updates: function () {
-  return event_updates.find();
-}
-});
-*/
-
 Meteor.startup(function() {
     $(window).resize(function() {
         $('#map').css('height', window.innerHeight);
@@ -55,7 +33,7 @@ Template.Riotr.rendered = function() {
     });
 
     //var query = EventUpdates.find();
-    EventUpdates.find().observe({
+    EventUpdates.find({"eventID": {$in: [Session.get("currentEventID")] }}).observe({
         added: function(document) {
             // if the doc has lat lngs then add to map
             if(document.lat && document.lng){
