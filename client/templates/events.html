@@ -1,5 +1,11 @@
 <template name="events">
+  <div class="container">
+    <h1>New Event:</h1>
     {{> quickForm collection="Events" doc=post id="insert-event-form" type="insert" buttonContent="Save"}}
+    <br>
+    <h1>Events:</h1>
+
+  </div>
     <ul class="list-group">
         {{#each events}}
           <li class="list-group-item">

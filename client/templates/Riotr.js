@@ -88,6 +88,7 @@ Template.Riotr.rendered = function() {
             marker.setLatLng(map.getCenter());
             //console.log(map.getCenter());
         });
+
         //Dragend event of map for update marker position
         map.on('dragend', function(e) {
             var cnt = map.getCenter();
@@ -104,6 +105,7 @@ Template.Riotr.rendered = function() {
         });
         $('#confirm_submit').on('click', function(){
           map.removeLayer(marker);
+          map.removeEventListener('dragend')
         });
 
     });
