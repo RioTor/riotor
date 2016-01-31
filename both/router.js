@@ -5,7 +5,7 @@ Router.route('/', function () {
 });
 Router.route('/events', function () {
   this.render('events', {
-    data: function () { return Events.find( { "isPrivate": { $in: [ true ] } } 
+    data: function () { /*return Events.find( { "isPrivate": { $in: [ false ] } */ } 
    }); 
   });
 });
