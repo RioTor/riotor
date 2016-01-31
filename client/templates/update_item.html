@@ -1,12 +1,12 @@
 <template name="update_item">
-  <div class="col-md-12">
-    <a href="#" class="list-group-item" id="{{_id}}">
-      <!--<h4 class="list-group-item-heading">{{lat}},{{lon}} </h4> -->
-      <p class ="list-group-item-text">{{name}}</p>
-      <span class="label label-default">{{tag}}</span>
-      <p class ="list-group-item-text">{{text}}</p>
-      <span class="list-group-item-text">{{created_on}}</span>
-
+    <a href="#" class="list-group-item ">
+        <!--<h4 class="list-group-item-heading">{{lat}},{{lon}} </h4> -->
+        <i class="{{tag}}" id="update_icon"></i>
+        <p class="list-group-item-text">{{text}}</p>
+        <center>
+            <p class="list-group-item-text time_stamp">
+                <strong><small>{{get_date created_on}} {{get_time created_on}}</small></strong>
+            </p>
+        </center>
     </a>
-  </div>
 </template>

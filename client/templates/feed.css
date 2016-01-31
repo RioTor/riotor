@@ -1,3 +1,7 @@
+.map_view_container{
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 #wrapper {
     padding-right: 0;
@@ -94,12 +98,17 @@ li.update_list_item {
     position: absolute;
     top: 0;
     right: 0;
-    width: 250px;
+    /*width: 250px;*/
     margin: 0;
     padding: 0;
     list-style: none;
-    margin-top: 2px;
+    margin-top: 0px;
 }
+
+.come-and-go{
+  width:250px;
+}
+
 
 .sidebar-nav li {
     text-indent: 15px;

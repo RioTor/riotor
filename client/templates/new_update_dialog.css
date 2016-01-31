@@ -2,3 +2,22 @@
 
 
 }
+
+.map_icon{
+color: #C1113F;
+font-size: 40px;
+}
+
+.tag_icons_list{
+  list-style-type:none;
+}
+
+.update_type_button a{
+
+  height: 71px;
+
+}
+li .pagnation-lg{
+  margin-top:0px;
+  margin-bottom:0px;
+}

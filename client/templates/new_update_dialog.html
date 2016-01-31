@@ -12,18 +12,49 @@
                 <!-- Modal Body -->
                 <div class="modal-body">
                     <h4>Alert Type:</h4>
-                    <select id="selectTag">
-                      <option value="other">other</option>
-                      <option value="speaker">speaker <i class="glyphicon glyphicon-bullhorn"></i></option>
-                      <option value="police">police</option>
-                      <option value="food">food</option>
-                      <option value="supplies">supplies</option>
-                      <option value="medic">medic</option>
-                      <option value="shelter">shelter</option>
-                      <option value="water">water</option>
-                      <option value="press">press</option>
-                      <option value="assembly">assembly</option>
+                    <!--
+                    <select id="selectTag" class="form-control">
+                      <option value="ion-ios-location map_icon">location</option>
+                      <option value="ion-speakerphone map_icon">rally</option>
+                      <option value="ion-mic-b map_icon">speaker</option>
+                      <option value="glyphicon glyphicon-apple map_icon">food</option>
+                      <option value="ion-waterdrop map_icon">water</option>
+                      <option value="ion-ios-cart map_icon">supplies</option>
+                      <option value="ion-home map_icon">shelter</option>
+                      <option value="ion-alert-circled map_icon">alert</option>
+                      <option value="ion-medkit map_icon">medic</option>
+                      <option value="ion-videocamera map_icon">media</option>
+                      <option value="glyphicon glyphicon-eye-open map_icon">eye</option>
+                      <option data-icon="glyphicon glyphicon-heart" value="glyphicon glyphicon-trash">trash</option>
                     </select>
+                  -->
+                    <center>
+                        <ul class="tag_icons_list">
+                            <li>
+                                <ul class="pagination pagnation-lg">
+                                    <li class="update_type_button"> <a href="#" value="ion-ios-location map_icon"><i class="ion-ios-location map_icon"></i></a></li>
+                                    <li class="update_type_button"> <a href="#" value="ion-speakerphone map_icon"><i class="ion-speakerphone map_icon"></i></a></li>
+                                    <li class="update_type_button"> <a href="#" value="ion-mic-b map_icon"><i class="ion-mic-b map_icon"></i></a></li>
+                                    <li class="update_type_button"> <a href="#" value="glyphicon glyphicon-apple map_icon"><i class="glyphicon glyphicon-apple map_icon"></i></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="pagination pagnation-lg">
+                                    <li class="update_type_button"><a href="#" value="ion-waterdrop map_icon"><i class="ion-waterdrop map_icon"></i></a></li>
+                                    <li class="update_type_button"><a href="#" value="ion-ios-cart map_icon"><i class="ion-ios-cart map_icon"></i></a></li>
+                                    <li class="update_type_button"><a href="#" value="ion-home map_icon"><i class="ion-home map_icon"></i></a></li>
+                                    <li class="update_type_button"><a href="#" value="ion-alert-circled map_icon"><i class="ion-alert-circled map_icon"></i></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="pagination pagnation-lg">
+                                    <li class="update_type_button"><a href="#" value="ion-medkit map_icon"><i class="ion-medkit map_icon"></i></a></li>
+                                    <li class="update_type_button"><a href="#" value="ion-videocamera map_icon"><i class="ion-videocamera map_icon"></i></a></li>
+                                    <li class="update_type_button"><a href="#" value="glyphicon glyphicon-eye-open map_icon"><i class="glyphicon glyphicon-eye-open map_icon"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </center>
                     <form role="form">
                         <div class="form-group">
                             <label for="inputMessage">Message</label>

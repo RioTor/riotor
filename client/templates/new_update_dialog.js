@@ -7,6 +7,17 @@ Meteor.startup(function() {
 
 
 Template.new_update_dialog.events({
+  'click .update_type_button': function(event){
+
+    var in_target = $(event.target).attr("value");
+    if (!in_target){
+      in_target = $(event.target).parent().attr("value");
+    }
+    console.log(in_target);
+    Session.set('selected_tag',in_target);
+
+
+  },
   'click #confirmText': function(){
 
     var tag = $("#selectTag").val();;
