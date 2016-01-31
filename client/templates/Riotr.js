@@ -1,3 +1,4 @@
+var map;
 Meteor.startup(function() {
     $(window).resize(function() {
         $('#map').css('height', window.innerHeight);
@@ -7,14 +8,29 @@ Meteor.startup(function() {
 
     //$(window).resize();
 });
-
+Template.update_item.events({
+   'click .list-group-item': function(){
+      console.log(this);
+  // leafletData.getMap('map').setView([this.lat,this.lng], 13);
+      map.setView([this.lat,this.lng], 13);
+      var marker;
+      for (marker in markers){
+         var lat = markers[marker].lat;
+         var lng = markers[marker].lng;
+         if (lat == this.lat && lng == this.lng){
+            markers[marker].openPopup();
+         }
+      }
+      //EventUpdates.find(this.uid).openPopup();
+   }
+});
 //temporary test markers
 //var Markers = new Mongo.Collection('markers');
 //Meteor.subscribe('markers');
 Template.Riotr.rendered = function() {
     $('#map').css('height', window.innerHeight);
 
-    var map = L.map('map', {
+    map = L.map('map', {
         doubleClickZoom: false
     }).setView([36.9719, -122.0264], 13);
 
@@ -22,15 +38,19 @@ Template.Riotr.rendered = function() {
     L.Icon.Default.imagePath = 'packages/bevanhunt_leaflet/images';
     L.tileLayer.provider('Thunderforest.Outdoors').addTo(map);
     //Markers.insert({lat: 5, lng: 5});
-
+    
+    /*
     map.on('dblclick', function(event) {
+        
         EventUpdates.insert({
             lat: event.latlng.lat,
             lng: event.latlng.lng,
             created_on: new Date()
         });
+
         console.log(event.latlng.lat, event.latlng.lng);
     });
+    */
 
     //var query = EventUpdates.find();
     EventUpdates.find({"eventID": {$in: [Session.get("currentEventID")] }}).observe({
@@ -40,14 +60,17 @@ Template.Riotr.rendered = function() {
                 var marker = L.marker([document.lat, document.lng]);
                 //L.marker([36.9719, -122.0264]).addTo(map);
                 marker.addTo(map);
-                marker.on('click', function(event) {
-                    map.removeLayer(marker);
-                    EventUpdates.remove({
-                        _id: document._id
-                    });
-                });
+                var popupData =  $("#"+document._id).html();
+                marker.bindPopup(popupData);
+                markers.push(marker);
+                //marker.on('click', function(event) {
+                 //   map.removeLayer(marker);
+                 //   EventUpdates.remove({
+                 //       _id: document._id
+                 //   });
+                //});
             }
-
+            
         }
     });
 
