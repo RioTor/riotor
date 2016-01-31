@@ -15,12 +15,12 @@ Events.attachSchema(new SimpleSchema({
   },
   dateCreated: {
     type: Date,
-    label: "date this event was created",
+    label: "Event Date",
     optional: true
   },
   desc: {
     type: String,
-    label: "Brief summary of event",
+    label: "Brief Summary of Event",
     optional: true,
     max: 1000
   }
