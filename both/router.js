@@ -9,7 +9,7 @@ Router.route('/events', function () {
   }); 
 });
 
-Router.route('/events/:_id', {
+Router.route('/:_id', {
     template: "Riotr",
     data: function(){
         return EventUpdates.find({ eventID: this.params._id });

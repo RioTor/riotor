@@ -94,7 +94,7 @@ Template.Riotr.rendered = function() {
             Session.set('latest_position',position);
 
             EventUpdates.update(Session.get("newestUpdateID"), {
-                $set: {lat: lat, lng: lng, created_on: new Date()}
+                $set: {lat: lat, lng: lng, created_on: new Date(), eventID: Session.get("currentEventID")}
             });
 
         });
