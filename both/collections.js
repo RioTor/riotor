@@ -8,21 +8,6 @@ Events.attachSchema(new SimpleSchema({
     label: "Event Name",
     max: 200,
     optional: false
-  },
-  zip: {
-    type: Number,
-    label: "Zip Code"
-  },
-  dateCreated: {
-    type: Date,
-    label: "Event Date",
-    optional: true
-  },
-  desc: {
-    type: String,
-    label: "Brief Summary of Event",
-    optional: true,
-    max: 1000
   }
 }));
 
