@@ -46,41 +46,40 @@ The following features have not nearly been implemented or fully decided on. Com
 	-Private events: Only members with a particular "key" can search, access and update an event feed. 
 	-Hybrid events: Can be searched, seen and accessed by anyone, but can only be updated by the administrators. 
 
--Users:
-	-Can create accounts with or without an email address. Users that choose not to put in an email account don't get to recover their account if their password is lost. 
+-Users can create accounts with or without an email address. Users that choose not to put in an email account don't get to recover their account if their password is lost. 
 
-	-Can drag and drop icon updates on the map as the event is happening. These icons will correspond to either of these particular categories:
-		-A speech/or talk
-		-Police barricades or military presence
-		-Supplies such as gas masks, bandanas, among others. 
-		-Food
-		-Water
-		-Medical attention or help
-		-Documentation being handed out
-		-Press presence
-		-Assembly/Place to meet
-		-Shelter
+-Users can drag and drop icon updates on the map as the event is happening. These icons will correspond to either of these particular categories:
+	-A speech/or talk
+	-Police barricades or military presence
+	-Supplies such as gas masks, bandanas, among others. 
+	-Food
+	-Water
+	-Medical attention or help
+	-Documentation being handed out
+	-Press presence
+	-Assembly/Place to meet
+	-Shelter
 
 	When an icon is dragged unto the map, it shows up on the event feed. 
 
-	-*Receive notifications during the action if any map updates are added, such as police barricades or help being provided. This would eliminate the need for having to constantly check what is happening.
+- *Users can receive notifications during the action if any map updates are added, such as police barricades or help being provided. This would eliminate the need for having to constantly check what is happening.
 
-	-Can enter updates on the feed regarding the event, before or during. The updates can be done in either of the following forms:
-		-Text updates
-		-*Photo and video. These help attendees create a live photo-journalistic recollection of the event from multiple perspectives. This material can be used to gather evidence in instances of police brutality and repression of any sort. 
-		-*Voice 
+- *Users can enter updates on the feed regarding the event, before or during. The updates can be done in either of the following forms:
+	-Text updates
+	-*Photo and video. These help attendees create a live photo-journalistic recollection of the event from multiple perspectives. This material can be used to gather evidence in instances of police brutality and repression of any sort. 
+	-*Voice 
 
-	-Can message each other through text or voice, securely. 
+-Users can message each other through text or voice, securely. 
 
-	-Can provide others with an account key that they can use to delete their account information in case of getting arrested or their device getting confiscated.
+-Users can provide others with an account key that they can use to delete their account information in case of getting arrested or their device getting confiscated.
 	 
-
 *The security vulnerabilities of allowing the application to interact with phone hardware is an ongoing discussion, for which we don't have a clear answer yet. 
+
 
 INSTALLATION
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-To download and run RioTor, install and run the Meteor development framework https://www.meteor.com/ on the RioTor folder. 
+RioTor is a web application built with Meteor Framwework and Bootstrap. To download and run RioTor, install and run the Meteor development framework https://www.meteor.com/ on the RioTor folder. 
 
 
 VERSION HISTORY
