@@ -31,10 +31,10 @@ FEATURES
 The following features have not nearly been implemented or fully decided on. Comments are welcome.  
 
 1. Security (Needs to be developed further. Ideas?)
-
--RioTor will be implemented and used in conjunction with the Tor network, making anonimity and privacy a priority. It is yet to be decided what the best route to go about this is, while maintaining the application's ideal of simple setup and ease of use. 
--Users can create anonymous accounts to add and update events. 
--Users' information and data is encrypted and protected from third parties.  
+   
+-RioTor will be implemented and used in conjunction with the Tor network, making anonimity and privacy a priority. It is yet to be decided what the best route to go about this is, while maintaining the application's ideal of simple setup and ease of use.     
+-Users can create anonymous accounts to add and update events.     
+-Users' information and data is encrypted and protected from third parties.      
 
 
 2. User interface 
