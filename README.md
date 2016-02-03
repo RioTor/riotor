@@ -104,10 +104,4 @@ LOOKING FORWARD
 3. To be used in conjunction with points of Wifi routing (How do we accomplish this?)
 In many instances during protests or marches, law enforcement officials shut down cell phone reception in the area so that organizers cannot communicate to one another. Given that RioTor can be accessed through smartphones, finding ways of ensuring wifi connection in these instances can make a difference between organizers being able to communicate with one another. 
 
-TEAM
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-melinchaos junglebells@riseup.net   
-galar 
-
-
 
