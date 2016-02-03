@@ -61,7 +61,7 @@ The following features have not nearly been implemented or fully decided on. Com
 		-Assembly/Place to meet
 		-Shelter
 
-		When an icon is dragged unto the map, it shows up on the event feed. 
+	When an icon is dragged unto the map, it shows up on the event feed. 
 
 	-*Receive notifications during the action if any map updates are added, such as police barricades or help being provided. This would eliminate the need for having to constantly check what is happening.
 
