@@ -14,7 +14,7 @@ HISTORY
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 With the advent of telecommunications, a multitude of tools have become available for people to communicate to each other and organize, but these tools have failed in some regards.
 
--Some of the social networks that people use have become more of a distraction than an actual place of connection or active participation. They have contributed greatly to generating a feeling of conformity and passive activism.
+-The social networks that people use have become more of a distraction than an actual place of connection or active participation. They have contributed greatly to generating a feeling of conformity and passive activism.
 
 -They have failed to become relevant in those moments and places where they could be very useful, such as marches, protests, rallies, general assemblies, decision making processes, committees, to mention a few.
 
@@ -43,10 +43,10 @@ The following features have not nearly been implemented or fully decided on. Com
 
 -Each event has an update feed and a live map of the region. 
 
--Events have multiple layers of security:
-   Public events: Everyone in the area can see, archive or "star" an event. In addition, anyone can update it. 
-   Private events: Only members with a particular "key" can search, access and update an event feed. 
-   Hybrid events: Can be searched, seen and accessed by anyone, but can only be updated by the administrators. 
+-Events have multiple layers of security:   
+   # Public events: Everyone in the area can see, archive or "star" an event. In addition, anyone can update it.    
+   # Private events: Only members with a particular "key" can search, access and update an event feed.    
+   # Hybrid events: Can be searched, seen and accessed by anyone, but can only be updated by the administrators.   
 
 -Users can create accounts with or without an email address. Users that choose not to put in an email account don't get to recover their account if their password is lost. 
 
