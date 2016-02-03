@@ -6,7 +6,9 @@ This README file, and RioTor for that purpose, are a work in progress. If you ha
 <img align="left" src="https://crabgrass.riseup.net/assets/272864/riotor-logo-150.png"> DESCRIPTION
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 RioTor is a communications platform for activists, built by activists and not corporations, secure, private, and decentralized, while also accessible and user friendly. 
-
+   
+      
+         
 
 HISTORY
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -104,4 +106,8 @@ LOOKING FORWARD
 3. To be used in conjunction with points of Wifi routing (How do we accomplish this?)
 In many instances during protests or marches, law enforcement officials shut down cell phone reception in the area so that organizers cannot communicate to one another. Given that RioTor can be accessed through smartphones, finding ways of ensuring wifi connection in these instances can make a difference between organizers being able to communicate with one another. 
 
+CONTACT
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+junglebells@riseup.net
 
