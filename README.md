@@ -92,13 +92,13 @@ VERSION HISTORY
 LOOKING FORWARD
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-1. Features being discussed:
--A calendar of events 
--Ability to invite other users in the area to events. 
--Ability for different members to create "organizations" or "groups"
--Organizations or groups can create subgroups, "committees" or afinity groups to discuss particular issues. 
--Tools to aid in democratic decision making processes or general assemblies, where participants can make propositions for a movement or cause, and vote and add ammends to propositions other members have made. 
--Other tools to help in gathering evidence and documentation against any type of repression or legal proceedings. 
+1. Features being discussed:   
+-A calendar of events    
+-Ability to invite other users in the area to events.   
+-Ability for different members to create "organizations" or "groups"  
+-Organizations or groups can create subgroups, "committees" or afinity groups to discuss particular issues.   
+-Tools to aid in democratic decision making processes or general assemblies, where participants can make propositions for a movement or cause, and vote and add ammends to propositions other members have made.    
+-Other tools to help in gathering evidence and documentation against any type of repression or legal proceedings.    
 
 2. Integration with other projects:    
 -Tapatio https://github.com/cooperq/tapatio   
