@@ -42,32 +42,31 @@ The following features have not nearly been implemented or fully decided on. Com
 -Each event has an update feed and a live map of the region. 
 
 -Events have multiple layers of security:
-	-Public events: Everyone in the area can see, archive or "star" an event. In addition, anyone can update it. 
-	-Private events: Only members with a particular "key" can search, access and update an event feed. 
-	-Hybrid events: Can be searched, seen and accessed by anyone, but can only be updated by the administrators. 
+   Public events: Everyone in the area can see, archive or "star" an event. In addition, anyone can update it. 
+   Private events: Only members with a particular "key" can search, access and update an event feed. 
+   Hybrid events: Can be searched, seen and accessed by anyone, but can only be updated by the administrators. 
 
 -Users can create accounts with or without an email address. Users that choose not to put in an email account don't get to recover their account if their password is lost. 
 
 -Users can drag and drop icon updates on the map as the event is happening. These icons will correspond to either of these particular categories:
-	-A speech/or talk
-	-Police barricades or military presence
-	-Supplies such as gas masks, bandanas, among others. 
-	-Food
-	-Water
-	-Medical attention or help
-	-Documentation being handed out
-	-Press presence
-	-Assembly/Place to meet
-	-Shelter
+   A speech/or talk
+   Police barricades or military presence
+   Supplies such as gas masks, bandanas, among others. 
+   Food
+   Water
+   Medical attention or help
+   Documentation being handed out
+   Press presence
+   Assembly/Place to meet
+   Shelter
 
-	When an icon is dragged unto the map, it shows up on the event feed. 
+When an icon is dragged unto the map, it shows up on the event feed. 
 
 - *Users can receive notifications during the action if any map updates are added, such as police barricades or help being provided. This would eliminate the need for having to constantly check what is happening.
 
 - *Users can enter updates on the feed regarding the event, before or during. The updates can be done in either of the following forms:
-	-Text updates
-	-*Photo and video. These help attendees create a live photo-journalistic recollection of the event from multiple perspectives. This material can be used to gather evidence in instances of police brutality and repression of any sort. 
-	-*Voice 
+   Text updates
+   *Photo and video. These help attendees create a live photo-journalistic recollection of the event from multiple perspectives. This material can be used to gather evidence in instances of police brutality and repression of any sort.        *Voice 
 
 -Users can message each other through text or voice, securely. 
 
