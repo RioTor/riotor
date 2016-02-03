@@ -5,7 +5,7 @@ This README file, and RioTor for that purpose, are a work in progress. If you ha
 
 DESCRIPTION
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-A communications platform for activists, built by activists and not corporations, secure, private, and decentralized, while also accessible and user friendly. 
+![RioTor](https://crabgrass.riseup.net/assets/272864/riotor-logo-150.png) A communications platform for activists, built by activists and not corporations, secure, private, and decentralized, while also accessible and user friendly. 
 
 
 HISTORY
