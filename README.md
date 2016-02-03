@@ -49,16 +49,16 @@ The following features have not nearly been implemented or fully decided on. Com
 -Users can create accounts with or without an email address. Users that choose not to put in an email account don't get to recover their account if their password is lost. 
 
 -Users can drag and drop icon updates on the map as the event is happening. These icons will correspond to either of these particular categories:	
-	- A speech/or talk
-	- Police barricades or military presence
-	- Supplies such as gas masks, bandanas, among others. 
-	- Food
-	- Water
-	- Medical attention or help
-	- Documentation being handed out
-	- Press 
-	- Assembly/Place to meet
-	- Shelter/Where to stay the night
+	- A speech/or talk  
+	- Police barricades or military presence  
+	- Supplies such as gas masks, bandanas, among others.   
+	- Food  
+	- Water  
+	- Medical attention or help  
+	- Documentation being handed out  
+	- Press   
+	- Assembly/Place to meet   
+	- Shelter/Where to stay the night   
 
 When an icon is dragged unto the map, it shows up on the event feed. Users can add text with details to the icon.
 
@@ -106,7 +106,7 @@ In many instances during protests or marches, law enforcement officials shut dow
 
 TEAM
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-melinchaos junglebells@riseup.net
+melinchaos junglebells@riseup.net   
 galar 
 
 
